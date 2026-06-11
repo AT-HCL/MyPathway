@@ -16,7 +16,10 @@
     "disclaimer": "This is not an official tool endorsed or supported by the State of California in any way. It is provided for informational purposes only. It gives estimates to help you plan. Your county makes all official decisions about your benefits, and you will receive official notices from the State of California.",
     "cdssLink": "CalFresh work rules (CDSS)",
     "dhcsLink": "Medi-Cal changes 2026-2028 (DHCS)",
-    "builtBy": "MyBenefitsPathway prototype. Built by The Health CoLab."
+    "howItWorks": "How this tool works",
+    "builtByPrefix": "Built by",
+    "builtByAnd": "and",
+    "builtBySuffix": "through generous support from funders."
   },
   "landing": {
     "title": "Keep your benefits on track",

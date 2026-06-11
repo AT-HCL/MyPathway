@@ -26,7 +26,7 @@ function Gate({ onUnlock }) {
   return (
     <div style={{ minHeight: "100vh", display: "flex", alignItems: "center", justifyContent: "center", background: "var(--primary-900)", padding: "var(--s-2)" }}>
       <form onSubmit={submit} className="card" style={{ width: "100%", maxWidth: 380 }}>
-        <h4 style={{ marginBottom: "var(--s-1)" }}>MyBenefitsPathway</h4>
+        <h4 style={{ marginBottom: "var(--s-1)" }}>MyPathway</h4>
         <p className="text-small text-muted" style={{ marginBottom: "var(--s-2)" }}>
           Prototype preview. Enter the shared username and password to continue.
         </p>

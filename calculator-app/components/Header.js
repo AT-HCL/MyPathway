@@ -30,7 +30,7 @@ export default function Header() {
       <div style={{ background: "var(--primary-900)", color: "var(--white)", padding: "0.75rem 0" }}>
         <div className="container container-wide flex items-center justify-between gap-2 flex-wrap">
           <Link href="/" style={{ color: "var(--white)", textDecoration: "none", fontWeight: 700, fontSize: "1.25rem" }}>
-            MyBenefitsPathway
+            MyPathway
           </Link>
           <nav className="flex items-center gap-2 flex-wrap" aria-label="Main">
             <div role="group" aria-label={t("header.langToggle")} style={{ display: "inline-flex", border: "1.5px solid rgba(255,255,255,0.5)", borderRadius: "var(--radius-2)", overflow: "hidden" }}>

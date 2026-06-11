@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useI18n } from "@/lib/i18n";
 
 export default function Footer() {
@@ -18,9 +19,20 @@ export default function Footer() {
           <a href="https://benefitscal.com" target="_blank" rel="noopener noreferrer" style={{ color: "var(--primary-300)" }}>
             BenefitsCal.com
           </a>
+          <Link href="/how-it-works" style={{ color: "var(--primary-300)" }}>
+            {t("footer.howItWorks")}
+          </Link>
         </div>
         <p style={{ fontSize: "0.8rem", color: "var(--primary-300)", marginTop: "var(--s-2)" }}>
-          {t("footer.builtBy")}
+          {t("footer.builtByPrefix")}{" "}
+          <a href="https://www.thehealthcolab.com" target="_blank" rel="noopener noreferrer" style={{ color: "var(--primary-300)" }}>
+            The Health CoLab
+          </a>{" "}
+          {t("footer.builtByAnd")}{" "}
+          <a href="https://www.aurrerahealth.com/" target="_blank" rel="noopener noreferrer" style={{ color: "var(--primary-300)" }}>
+            Aurrera Health Group
+          </a>{" "}
+          {t("footer.builtBySuffix")}
         </p>
       </div>
     </footer>

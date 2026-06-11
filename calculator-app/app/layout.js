@@ -2,7 +2,7 @@ import "./globals.css";
 import Shell from "@/components/Shell";
 
 export const metadata = {
-  title: "MyBenefitsPathway",
+  title: "MyPathway",
   description:
     "Track your work, school, volunteering, and income, and see how they count toward CalFresh and Medi-Cal community engagement requirements. Informational tool only.",
 };

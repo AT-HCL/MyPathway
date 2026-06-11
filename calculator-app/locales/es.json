@@ -16,7 +16,10 @@
     "disclaimer": "Esta no es una herramienta oficial avalada ni respaldada por el Estado de California de ninguna manera. Se ofrece únicamente con fines informativos. Le da estimados para ayudarle a planear. Su condado toma todas las decisiones oficiales sobre sus beneficios, y usted recibirá avisos oficiales del Estado de California.",
     "cdssLink": "Reglas de trabajo de CalFresh (CDSS)",
     "dhcsLink": "Cambios de Medi-Cal 2026-2028 (DHCS)",
-    "builtBy": "Prototipo de MyBenefitsPathway. Creado por The Health CoLab."
+    "howItWorks": "Cómo funciona esta herramienta (en inglés)",
+    "builtByPrefix": "Creado por",
+    "builtByAnd": "y",
+    "builtBySuffix": "gracias al generoso apoyo de financiadores."
   },
   "landing": {
     "title": "Mantenga sus beneficios al día",
