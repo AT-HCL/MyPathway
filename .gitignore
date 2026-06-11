@@ -1,0 +1,13 @@
+# Source/reference materials, not part of the codebase
+Calculator/
+
+# Dependencies and build output
+node_modules/
+.next/
+.vercel/
+
+# Environment
+.env*
+
+# OS
+.DS_Store

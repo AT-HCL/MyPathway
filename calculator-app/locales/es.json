@@ -1,0 +1,504 @@
+{
+  "common": {
+    "estimateOnly": "Esta herramienta solo le da un estimado. El trabajador de su condado toma la decisión final sobre sus beneficios.",
+    "officialNotice": "Recuerde: usted recibirá un aviso oficial del Estado de California sobre sus beneficios. Esta herramienta no reemplaza ese aviso. Si tiene preguntas, comuníquese con el trabajador de su condado.",
+    "disclaimer": "Esta no es una herramienta oficial avalada ni respaldada por el Estado de California de ninguna manera. Se ofrece únicamente con fines informativos."
+  },
+  "header": {
+    "stripe": "Herramienta informativa para beneficios de California",
+    "prototypeTag": "PROTOTIPO",
+    "langToggle": "Idioma",
+    "myPathway": "Mi Camino",
+    "signOut": "Cerrar sesión",
+    "signIn": "Iniciar sesión"
+  },
+  "footer": {
+    "disclaimer": "Esta no es una herramienta oficial avalada ni respaldada por el Estado de California de ninguna manera. Se ofrece únicamente con fines informativos. Le da estimados para ayudarle a planear. Su condado toma todas las decisiones oficiales sobre sus beneficios, y usted recibirá avisos oficiales del Estado de California.",
+    "cdssLink": "Reglas de trabajo de CalFresh (CDSS)",
+    "dhcsLink": "Cambios de Medi-Cal 2026-2028 (DHCS)",
+    "builtBy": "Prototipo de MyBenefitsPathway. Creado por The Health CoLab."
+  },
+  "landing": {
+    "title": "Mantenga sus beneficios al día",
+    "subtitle": "Nuevas reglas federales pueden pedirle trabajar, ser voluntario, estudiar o hacer otras actividades para mantener sus beneficios de CalFresh o Medi-Cal. Esta herramienta gratuita le ayuda a entender qué se puede esperar de usted, llevar la cuenta de sus horas e ingresos, y mostrar lo que ha hecho.",
+    "entry1Title": "¿Estas reglas aplican a mí?",
+    "entry1Desc": "Conteste unas preguntas sencillas. Le ayudaremos a estimar si los nuevos requisitos pueden aplicar a sus beneficios y qué tan cerca está de cumplirlos. Toma unos 5 minutos.",
+    "entry2Title": "Iniciar sesión en mi panel",
+    "entry2Desc": "¿Ya tiene una cuenta? Escriba su correo electrónico o número de teléfono y le enviaremos un enlace seguro. No necesita contraseña.",
+    "entry3Title": "Crear una cuenta y empezar a registrar",
+    "entry3Desc": "¿Ya sabe que estas reglas aplican a usted? Cree una cuenta y empiece a registrar sus horas e ingresos de inmediato.",
+    "datesTitle": "Fechas clave:",
+    "datesBody": "Las reglas de trabajo y participación comunitaria de CalFresh comenzaron el 1 de junio de 2026. Algunos condados tienen exenciones hasta el 31 de octubre de 2026. Las reglas de Medi-Cal comienzan el 1 de enero de 2027. Su condado le enviará una carta si esto aplica a usted.",
+    "letterTitle": "¿Recibió una carta de su condado?",
+    "letterBody": "No se asuste. Una carta no significa que está perdiendo sus beneficios. Por lo general significa que el condado necesita información suya, o quiere informarle sobre las nuevas reglas. Lea la carta con cuidado, anote cualquier fecha límite y use los recursos oficiales de abajo. También puede usar esta herramienta para registrar las actividades que la carta menciona.",
+    "linkCdss": "Requisitos de trabajo y participación comunitaria de CalFresh (CDSS)",
+    "linkDhcs": "Cambios al programa Medi-Cal 2026-2028 (DHCS)",
+    "linkBenefitsCal": "BenefitsCal.com, el sitio oficial para solicitar y manejar sus beneficios"
+  },
+  "flow": {
+    "progress": "Pregunta {current} de {total}",
+    "next": "Siguiente",
+    "back": "Atrás",
+    "sections": {
+      "welcome": "Bienvenida",
+      "before": "Antes de empezar",
+      "benefits": "Sus beneficios",
+      "work": "Trabajo",
+      "school": "Escuela o capacitación",
+      "volunteer": "Voluntariado",
+      "zip": "Su código postal",
+      "workfare": "Workfare"
+    },
+    "units": {
+      "hoursPerWeek": "horas por semana",
+      "dollarsPerHour": "dólares por hora",
+      "dollarsTotal": "dólares en total",
+      "creditHours": "horas crédito este periodo",
+      "dollarsPerMonth": "dólares por mes"
+    },
+    "userType": {
+      "q": "¿Quién está llenando esta herramienta hoy?",
+      "hint": "Esto nos ayuda a mostrarle el lenguaje y los consejos adecuados.",
+      "intro": "Las reglas de trabajo y participación comunitaria de CalFresh comenzaron el 1 de junio de 2026 bajo la nueva ley federal (H.R.1). Algunos condados tienen exenciones hasta el 31 de octubre de 2026, y lo verificamos automáticamente con su código postal. Las reglas de Medi-Cal comienzan el 1 de enero de 2027. Esta herramienta le ayuda a estimar si ya está cumpliendo los requisitos, o qué tan cerca está. Toma unos 5 minutos. Solo le da un estimado: el trabajador de su condado toma la decisión final, y usted recibirá avisos oficiales del Estado de California.",
+      "opts": {
+        "participant": "Recibo beneficios y quiero revisar mi propia situación",
+        "professional": "Soy trabajador de casos, consejero u otro profesional ayudando a otra persona"
+      }
+    },
+    "gotNotice": {
+      "q": "¿Su condado le ha enviado una carta o aviso diciendo que necesita cumplir requisitos de participación comunitaria?",
+      "hint": "Estas reglas no aplican a todos. Si todavía no ha recibido un aviso, igual puede usar esta herramienta para planear.",
+      "intro": "Por qué preguntamos: el requisito de participación comunitaria no aplica a todos. Muchas personas no tienen que cumplirlo, por ejemplo si están embarazadas, tienen una discapacidad, cuidan a un niño pequeño, o salieron hace poco de la cárcel o prisión. Su condado le enviará una carta si usted necesita cumplir estas reglas. Solo el condado decide a quién aplican las reglas.",
+      "opts": {
+        "yes": "Sí, recibí un aviso diciendo que necesito cumplir estos requisitos",
+        "no": "No, no he recibido un aviso",
+        "notsure": "No estoy seguro(a)"
+      }
+    },
+    "program": {
+      "q": "¿Qué beneficios quiere mantener?",
+      "hint": "Para mantener sus beneficios, puede que necesite hacer ciertas actividades cada mes. Elija los que aplican a usted.",
+      "intro": "Por qué preguntamos: las reglas son diferentes para CalFresh y Medi-Cal. Saber qué beneficios tiene nos ayuda a hacerle las preguntas correctas y sumar sus horas correctamente.",
+      "opts": {
+        "calfresh": "CalFresh (beneficios de comida)",
+        "medical": "Medi-Cal (cobertura de salud)",
+        "both": "Ambos: CalFresh y Medi-Cal"
+      }
+    },
+    "hasJob": {
+      "q": "¿Tiene trabajo en este momento?",
+      "hint": "Esto incluye un trabajo pagado, su propio negocio, o trabajo de temporada.",
+      "intro": "Por qué preguntamos: trabajar cuenta para su requisito. Para CalFresh, ganar al menos $217.50 a la semana o trabajar unas 20 horas a la semana generalmente cumple la regla. Para Medi-Cal, ganar al menos $580 al mes generalmente la cumple. Las horas que trabaja también cuentan para su total mensual.",
+      "opts": {
+        "yes": "Sí, tengo trabajo",
+        "no": "No, no tengo trabajo",
+        "notsure": "No estoy seguro(a)"
+      }
+    },
+    "workHrs": {
+      "q": "¿Cuántas horas a la semana trabaja?",
+      "hint": "Escriba su mejor cálculo. Si sus horas cambian cada semana, use el promedio."
+    },
+    "hourlyPay": {
+      "q": "¿Cuánto le pagan por hora?",
+      "hint": "Escriba su pago por hora. Si gana una cantidad fija al mes, divida esa cantidad entre las horas que trabajó."
+    },
+    "isSeasonal": {
+      "q": "¿Su trabajo es de temporada?",
+      "hint": "De temporada significa que trabaja principalmente en ciertas épocas del año, como trabajo agrícola durante la cosecha o ventas durante las fiestas.",
+      "intro": "Por qué preguntamos: si su trabajo es de temporada, Medi-Cal puede usar su ingreso promedio de los últimos 6 meses en lugar de solo este mes. Eso puede ayudarle a cumplir el requisito incluso en meses cuando gana menos.",
+      "opts": {
+        "yes": "Sí, mi trabajo es de temporada",
+        "no": "No, trabajo todo el año"
+      }
+    },
+    "seasonal6moTotal": {
+      "q": "¿Más o menos cuánto ganó en total en los últimos 6 meses?",
+      "hint": "Sume su pago de los últimos 6 meses. Su mejor cálculo está bien. Usaremos el promedio mensual."
+    },
+    "inSchool": {
+      "q": "¿Está en la escuela o en un programa de capacitación laboral en este momento?",
+      "hint": "Esto incluye universidad, capacitación laboral, formación vocacional, educación para adultos, preparatoria y programas de GED.",
+      "intro": "Por qué preguntamos: la escuela y la capacitación laboral cuentan para su requisito. Si está inscrito(a) al menos medio tiempo, eso por sí solo generalmente cumple el requisito de Medi-Cal del mes.",
+      "opts": {
+        "yes": "Sí, estoy en la escuela o en un programa de capacitación",
+        "no": "No, no lo estoy"
+      }
+    },
+    "schoolEnrollment": {
+      "q": "¿Cómo está inscrito(a)?",
+      "hint": "Su escuela decide si usted cuenta como estudiante de medio tiempo. Si no está seguro(a), pregunte en la oficina de su escuela o elija la última opción.",
+      "opts": {
+        "half_time_plus": "Medio tiempo o más (mi escuela dice que soy estudiante de al menos medio tiempo)",
+        "less_credit": "Menos de medio tiempo, en clases con horas crédito (como colegio comunitario)",
+        "less_noncredit": "Menos de medio tiempo, en un programa sin horas crédito (como capacitación laboral o escuela para adultos)",
+        "notsure": "No estoy seguro(a)"
+      }
+    },
+    "schoolCredits": {
+      "q": "¿Cuántas horas crédito está tomando este periodo?",
+      "hint": "Revise su horario de clases. Cada hora crédito cuenta como unas 13 horas al mes para su requisito."
+    },
+    "schoolHrs": {
+      "q": "¿Cuántas horas a la semana pasa en la escuela o capacitación?",
+      "hint": "Cuente el tiempo en clase y haciendo actividades requeridas del programa."
+    },
+    "volunteers": {
+      "q": "¿Hace trabajo voluntario en algún lugar en este momento?",
+      "hint": "El trabajo no pagado para una organización comunitaria puede contar para su requisito.",
+      "intro": "Por qué preguntamos: el voluntariado con una organización sin fines de lucro, agencia de gobierno o grupo religioso cuenta para sus horas mensuales. La organización debe poder confirmar sus horas.",
+      "opts": {
+        "yes": "Sí, hago voluntariado",
+        "no": "No, no hago voluntariado"
+      }
+    },
+    "volQualifies": {
+      "q": "¿El lugar donde hace voluntariado es una organización sin fines de lucro, una agencia de gobierno o un grupo religioso?",
+      "hint": "El voluntariado generalmente cuenta cuando es con uno de estos tipos de organizaciones y llevan registro de sus horas.",
+      "opts": {
+        "yes": "Sí, es una organización sin fines de lucro, de gobierno o religiosa",
+        "no": "No, es otra cosa",
+        "notsure": "No estoy seguro(a)"
+      }
+    },
+    "volHrs": {
+      "q": "¿Cuántas horas a la semana hace voluntariado?",
+      "hint": "Escriba su mejor cálculo. Si cambia cada semana, use el promedio."
+    },
+    "zipCode": {
+      "q": "¿Cuál es su código postal?",
+      "hint": "Escriba el código postal de 5 dígitos donde vive.",
+      "intro": "Por qué preguntamos: algunos condados tienen exenciones de CalFresh en este momento, lo que significa que las reglas de trabajo pueden no aplicar ahí todavía. Algunas ciudades también tienen un salario mínimo más alto, lo cual importa si está en workfare. Su código postal nos ayuda a verificar ambas cosas y mostrarle recursos cerca de usted."
+    },
+    "workfare": {
+      "q": "¿Está en un programa de workfare en su condado?",
+      "hint": "Workfare significa hacer trabajo no pagado asignado por el condado a cambio de sus beneficios de CalFresh. La mayoría de las personas no están en workfare. Si nunca ha oído de esto, elija No.",
+      "intro": "Por qué preguntamos: si está en workfare, sus horas requeridas son diferentes. Se basan en su beneficio mensual dividido entre el salario mínimo.",
+      "opts": {
+        "yes": "Sí, estoy en un programa de workfare",
+        "no": "No",
+        "notsure": "No estoy seguro(a)"
+      }
+    },
+    "workfareBenefit": {
+      "q": "¿Cuánto recibe al mes en beneficios de comida de CalFresh?",
+      "hint": "Revise su depósito de EBT o el aviso de su condado para ver la cantidad mensual."
+    }
+  },
+  "results": {
+    "metTitle": "Parece que va por buen camino",
+    "metSub": "Según lo que nos dijo, parece que tiene suficiente actividad que califica este mes. Guarde sus registros de horas y pago, y lleve este resumen al trabajador de su condado para asegurarse de que todo quede registrado correctamente.",
+    "gapTitle": "Parece que puede necesitar más horas este mes",
+    "gapSub": "Según lo que nos dijo, parece que todavía no llega a la cantidad mensual. Vea abajo cuántas horas más puede necesitar y maneras de conseguirlas. Recuerde, esto es solo un estimado.",
+    "waived": "Buenas noticias: parece que el condado de {county} tiene una exención de CalFresh hasta el 31 de octubre de 2026. Probablemente no necesita cumplir las reglas de trabajo de CalFresh ahí hasta al menos el 1 de noviembre de 2026. Consulte con el trabajador de su condado para la información más actualizada.",
+    "waivedSource": "Fuente: CDSS",
+    "breakdownTitle": "Sus horas estimadas este mes",
+    "rows": {
+      "work": "Trabajo",
+      "volunteering": "Voluntariado",
+      "school": "Escuela o capacitación",
+      "eduHalfTime": "Escuela (medio tiempo o más)",
+      "pay": "Pago estimado"
+    },
+    "eduMeets": "Cumple el requisito de Medi-Cal por sí solo",
+    "hrs": "{n} hrs",
+    "week": "semana",
+    "month": "mes",
+    "calfreshTitle": "CalFresh (beneficios de comida)",
+    "cfStandard": "La regla general: unas {hours} horas de actividad que califica al mes, o ganar al menos {pay} a la semana.",
+    "cfWorkfare": "Su estimado de workfare: unas {required} horas requeridas, según su cantidad de beneficios dividida entre el salario mínimo de {locality} de {wage} por hora.",
+    "cfMet": "Parece que está cumpliendo el requisito de CalFresh.",
+    "cfGap": "Parece que puede necesitar unas {n} horas más este mes para CalFresh.",
+    "medicalTitle": "Medi-Cal (cobertura de salud)",
+    "mcStandard": "La regla general: {hours} horas de actividad que califica al mes, o un ingreso de al menos {income} al mes. Las horas y el ingreso se pueden combinar.",
+    "mcPathways": {
+      "education_half_time": "Parece que estar inscrito(a) en la escuela al menos medio tiempo cumple el requisito de Medi-Cal en su caso.",
+      "income": "Parece que su ingreso mensual cumple el requisito de Medi-Cal por sí solo.",
+      "seasonal_average": "Parece que su ingreso promedio de 6 meses como trabajador(a) de temporada cumple el requisito de Medi-Cal.",
+      "combination": "Parece que la combinación de sus horas e ingresos cumple el requisito de Medi-Cal."
+    },
+    "mcGap": "Parece que puede necesitar unas {n} horas más, o unos {income} más de ingreso mensual, para Medi-Cal.",
+    "whatCountsTitle": "¿Qué cuenta para sus horas?",
+    "whatCountsBody": "Cuenta el trabajo (incluyendo trabajo por cuenta propia y trabajo pagado en especie), el voluntariado con una organización sin fines de lucro, de gobierno o religiosa, la capacitación laboral y los programas de trabajo, y la escuela. Puede combinar: por ejemplo, algunas horas de trabajo más algunas horas de voluntariado. Para Medi-Cal, su ingreso también puede contar en lugar de horas. Cree una cuenta para registrar todo en un solo lugar y recibir un plan que se ajuste a su vida.",
+    "ctaCreate": "Crear una cuenta y empezar a registrar",
+    "print": "Imprimir esta página"
+  },
+  "auth": {
+    "errEmpty": "Por favor escriba su correo electrónico o número de teléfono.",
+    "errRequired": "Por favor complete su nombre, contacto, condado y al menos un programa.",
+    "signInTitle": "Iniciar sesión en Mi Camino",
+    "signInSub": "Aquí no hay contraseñas. Le enviamos un enlace seguro a su correo o teléfono, y usted lo toca para entrar.",
+    "contactLabel": "Correo electrónico o número de teléfono",
+    "contactHint": "Escriba el correo electrónico o número de celular que usó para su cuenta.",
+    "contactPlaceholder": "usted@ejemplo.com o (555) 555-5555",
+    "sendLink": "Envíenme un enlace seguro",
+    "orSocial": "O inicie sesión con:",
+    "signInWith": "Continuar con {provider}",
+    "checkTitle": "Revise sus mensajes",
+    "checkBody": "Enviamos un enlace seguro de acceso a {contact}. Ábralo en este dispositivo para continuar. El enlace funciona por 15 minutos.",
+    "yourInbox": "su bandeja de entrada",
+    "demoNote": "Nota del prototipo: en el producto real, este enlace llega por correo electrónico o mensaje de texto. Para esta demostración, use el botón de abajo para simular que toca el enlace.",
+    "demoOpenLink": "Simular abrir el enlace",
+    "createTitle": "Cree su cuenta",
+    "createSub": "Solo lo básico para empezar. Puede agregar más detalles después. Nunca necesitará contraseña.",
+    "flowCarryover": "Guardamos sus respuestas de las preguntas que acaba de contestar. Se pasarán a su nueva cuenta.",
+    "nameLabel": "Su nombre",
+    "countyLabel": "Su condado",
+    "countySelect": "Elija su condado...",
+    "zipLabel": "Código postal",
+    "programsLabel": "¿Qué beneficios tiene?",
+    "programs": {
+      "calfresh": "CalFresh (beneficios de comida)",
+      "medical": "Medi-Cal (cobertura de salud)",
+      "both": "CalFresh y Medi-Cal"
+    },
+    "createCta": "Crear mi cuenta",
+    "noPassword": "Le enviaremos un enlace seguro para confirmar su correo o teléfono. Así iniciará sesión cada vez: sin contraseñas que recordar."
+  },
+  "dash": {
+    "title": "Bienvenido(a), {name}",
+    "countySuffix": "(condado)",
+    "tabs": {
+      "overview": "Mi Camino",
+      "log": "Registrar actividad",
+      "validations": "Validación",
+      "plan": "Mi plan",
+      "classes": "Tomar una clase",
+      "career": "Construya su carrera",
+      "reports": "Reportes",
+      "resources": "Obtener ayuda",
+      "profile": "Perfil"
+    },
+    "monthlyPrompt": "Es un nuevo mes. ¿Ha cambiado algo con su trabajo, escuela o ingresos? Una revisión rápida mantiene su plan al día.",
+    "monthlyPromptCta": "Actualizar mi plan",
+    "dismiss": "Ahora no",
+    "profilePrompt": "Termine de configurar su perfil. Agregar detalles le ayudará a usted y a cualquier persona que usted elija para ayudarle.",
+    "profilePromptCta": "Completar perfil",
+    "progressTitle": "Su progreso de {month}",
+    "requirement": "Meta: {n} horas o equivalente",
+    "statusMet": "Ha reportado {hours} horas y {income} de ingresos este mes. Juntos, parece que cumplen su requisito. ¡Buen trabajo!",
+    "statusGap": "Ha reportado {hours} horas y {income} de ingresos este mes. Parece que necesita unas {gapHours} horas más, o unos {gapIncome} más de ingresos reportados, para cumplir su requisito este mes.",
+    "statusGapHint": "Las horas y los ingresos trabajan juntos. Cualquier combinación que sume sirve. Vea la pestaña Mi plan para ideas que se ajusten a su vida.",
+    "hoursReported": "Horas reportadas",
+    "incomeReported": "Ingresos reportados",
+    "seasonalTitle": "Trabajador(a) de temporada: promedio de 6 meses",
+    "seasonalBody": "Sus ingresos reportados de los últimos 6 meses promedian {avg} al mes.",
+    "seasonalMet": "Parece que este promedio cumple el requisito de ingresos de Medi-Cal, incluso en meses cuando gana menos.",
+    "seasonalNotMet": "Este promedio está por debajo de la cantidad mensual, así que siga registrando horas también.",
+    "recentTitle": "Registros de este mes",
+    "noEntries": "Todavía no hay nada registrado. Agregue su primera actividad para empezar a crear su expediente."
+  },
+  "log": {
+    "title": "Registrar una actividad",
+    "type": "Tipo de actividad",
+    "types": {
+      "work": "Trabajo (empleo o cuenta propia)",
+      "community_service": "Voluntariado / servicio comunitario",
+      "education": "Escuela o educación",
+      "work_program": "Capacitación laboral / programa de trabajo"
+    },
+    "mode": "¿Cómo quiere reportarlo?",
+    "modeHint": "Puede reportar tiempo (horas) o pago (salario). Elija lo que sea más fácil de demostrar con sus registros.",
+    "modes": {
+      "hours": "Horas",
+      "wages": "Pago / salario"
+    },
+    "date": "Fecha",
+    "hours": "Horas",
+    "amount": "Cantidad ($)",
+    "desc": "Descripción",
+    "descHint": "Por ejemplo: \"Turno en Save Mart\" o \"Voluntariado en el banco de comida\".",
+    "doc": "Documento de apoyo (opcional)",
+    "docHint": "Un talón de pago, hoja de horas, carta o certificado. También puede agregarlo después.",
+    "save": "Guardar este registro",
+    "saved": "Guardado. Ya está en su contador de Mi Camino.",
+    "errInvalid": "Por favor escriba una fecha y una cantidad mayor que cero.",
+    "footnote": "Consejo: registre sus actividades cuando las haga, poco a poco. Los registros pequeños suman, y su expediente queda listo por si su condado lo pide.",
+    "reported": "Reportado"
+  },
+  "validation": {
+    "title": "Validación",
+    "sub": "Pida a alguien que conozca su trabajo, como un supervisor, coordinador de voluntarios o maestro, que confirme una actividad. Su confirmación hace su expediente más sólido. No necesitan una cuenta.",
+    "status": "Estado",
+    "statuses": {
+      "not_submitted": "No enviado",
+      "pending": "Pendiente",
+      "validated": "Validado",
+      "declined": "Rechazado",
+      "expired": "Vencido"
+    },
+    "pendingInfo": "Enviado a {contact} hace {days} día(s). El enlace funciona por 14 días.",
+    "reminder3": "Se envió un recordatorio el día 3.",
+    "reminder7": "Se envió otro recordatorio el día 7.",
+    "demoOpenValidator": "Demo: abrir la vista del validador",
+    "validatedBy": "Confirmado por {name}, {title}, {org}.",
+    "declinedReason": "Rechazado: {reason}",
+    "contactPlaceholder": "Su correo electrónico o teléfono",
+    "send": "Enviar solicitud",
+    "cancel": "Cancelar",
+    "requestCta": "Solicitar validación",
+    "lifecycleNote": "Cómo funciona: enviamos a su validador un enlace seguro. Solo ve esta actividad, agrega su nombre y organización, y confirma o rechaza. Los recordatorios salen el día 3 y el día 7. Los enlaces vencen a los 14 días, y usted siempre puede enviar una nueva solicitud."
+  },
+  "validator": {
+    "notFound": "Este enlace no es válido o ya venció.",
+    "errRequired": "Por favor escriba su nombre y organización.",
+    "errReason": "Por favor agregue una breve razón para rechazar.",
+    "thanksValidated": "Gracias por confirmar",
+    "thanksDeclined": "Respuesta registrada",
+    "recorded": "Su respuesta se guardó en el expediente del miembro con su nombre y organización.",
+    "backToDemo": "Volver al panel de demostración",
+    "demoBanner": "Nota del prototipo: esto es lo que ve un validador después de tocar el enlace seguro que recibe por correo o mensaje de texto. No se necesita cuenta.",
+    "title": "Confirmar una actividad",
+    "sub": "{member} lo nombró como alguien que puede confirmar la actividad de abajo. Por favor revísela y confirme o rechace. Toma alrededor de un minuto.",
+    "name": "Su nombre",
+    "vtitle": "Su puesto o función",
+    "org": "Su organización",
+    "doc": "Agregar un documento (opcional)",
+    "reason": "Razón (solo si rechaza)",
+    "reasonHint": "Por ejemplo: \"Las fechas no son correctas\" o \"Yo no superviso a esta persona\".",
+    "attest": "Confirmo que esto es correcto",
+    "decline": "Rechazar",
+    "signatureNote": "Confirmar funciona como su firma digital. Su nombre, función, organización y la fecha quedarán registrados con esta actividad."
+  },
+  "plan": {
+    "title": "Mi plan personalizado",
+    "sub": "Conteste unas preguntas rápidas sobre su vida, y le sugeriremos una combinación realista de actividades para alcanzar su meta mensual.",
+    "q": {
+      "transport": {
+        "label": "¿Tiene una forma confiable de transportarse?",
+        "opts": { "yes": "Sí", "limited": "A veces", "no": "No" }
+      },
+      "caregiving": {
+        "label": "¿Cuida a niños o familiares durante el día?",
+        "opts": { "yes": "Sí", "no": "No" }
+      },
+      "schedule": {
+        "label": "¿Cuál es su situación de trabajo?",
+        "opts": {
+          "full": "Trabajo tiempo completo",
+          "part": "Trabajo medio tiempo",
+          "varies": "Mis horas cambian mucho",
+          "none": "No estoy trabajando ahora"
+        }
+      },
+      "digital": {
+        "label": "¿Qué usa para conectarse a internet?",
+        "opts": {
+          "smartphone": "Principalmente mi teléfono",
+          "computer": "Una computadora o tableta",
+          "limited": "Tengo acceso limitado a internet"
+        }
+      },
+      "interests": {
+        "label": "¿Qué le interesa? Elija todo lo que aplique.",
+        "opts": {
+          "jobs": "Encontrar trabajo o más trabajo",
+          "volunteering": "Voluntariado",
+          "education": "Escuela o clases",
+          "training": "Capacitación laboral"
+        }
+      }
+    },
+    "generate": "Crear mi plan",
+    "summaryGap": "Aquí tiene una combinación que podría cubrir sus {gap} horas restantes este mes (o {income} más en ingresos reportados).",
+    "summaryMet": "Parece que ya va por buen camino este mes. Este plan puede ayudarle a mantenerse así.",
+    "hoursPerMonth": "~{n} hrs/mes",
+    "redo": "Actualizar mis respuestas",
+    "recs": {
+      "findWork": {
+        "title": "Busque trabajo en CalJOBS y su centro de empleo local",
+        "desc": "El trabajo pagado cuenta hora por hora, y su pago también cuenta. CalJOBS es gratis, y los America's Job Centers pueden ayudarle con currículums y solicitudes en persona."
+      },
+      "onlineCourses": {
+        "title": "Tome clases gratuitas en línea desde casa",
+        "desc": "Los cursos en línea cuentan para sus horas y se acomodan al cuidado de la familia y al transporte. Cada hora de clase completada cuenta. Khan Academy y las clases en línea de escuelas para adultos son gratis."
+      },
+      "localClasses": {
+        "title": "Inscríbase en clases en un colegio comunitario o escuela para adultos",
+        "desc": "Las horas de escuela cuentan para su requisito. Si se inscribe al menos medio tiempo, eso por sí solo generalmente cumple el requisito de Medi-Cal. El colegio comunitario puede ser gratis para miembros de CalFresh y Medi-Cal."
+      },
+      "training": {
+        "title": "Únase a un programa de capacitación laboral",
+        "desc": "Programas gratuitos como CalFresh Employment & Training y WIOA cuentan para sus horas y desarrollan habilidades para ganar mejor. Pida a su condado o centro de empleo que lo inscriba."
+      },
+      "volunteering": {
+        "title": "Sea voluntario(a) con una organización sin fines de lucro, de gobierno o religiosa",
+        "desc": "Las horas de voluntariado cuentan. Elija un lugar que pueda confirmar sus horas, como un banco de comida, una escuela o un centro comunitario. VolunteerMatch tiene oportunidades cerca de usted."
+      },
+      "remoteVolunteering": {
+        "title": "Haga voluntariado flexible o desde casa",
+        "desc": "Algunas organizaciones ofrecen voluntariado flexible o remoto que se acomoda al cuidado de la familia. Busque funciones donde la organización registre y pueda confirmar sus horas."
+      },
+      "reportIncome": {
+        "title": "Reporte su pago cada mes",
+        "desc": "Para Medi-Cal, los ingresos cuentan para su requisito: $580 al mes generalmente lo cumple por sí solo, y las cantidades menores se combinan con sus horas. Registre sus talones de pago en esta aplicación para que nada se pierda."
+      }
+    }
+  },
+  "comingSoon": {
+    "tag": "Próximamente",
+    "meanwhile": "Mientras tanto, aquí tiene dos buenos lugares para empezar:",
+    "classes": {
+      "title": "Tomar una clase",
+      "body": "Clases y capacitación gratuitas en línea que cuentan para sus horas mensuales, directamente desde este panel. Las horas de los cursos se registrarán automáticamente en su contador de Mi Camino, sin papeleo adicional. Lo estamos construyendo ahora."
+    },
+    "career": {
+      "title": "Construya su carrera",
+      "body": "Conéctese con oportunidades reales cerca de usted: programas de colegio comunitario, aprendizajes, certificados y educación para adultos. Podrá crear un plan de carrera y las actividades completadas contarán automáticamente para sus horas. Lo estamos construyendo ahora."
+    }
+  },
+  "reports": {
+    "title": "Reportes",
+    "sub": "Cree un resumen de sus actividades para cualquier periodo. Descárguelo, imprímalo o compártalo con el trabajador de su condado o con alguien que le esté ayudando.",
+    "from": "Desde el mes",
+    "to": "Hasta el mes",
+    "csv": "Descargar CSV",
+    "pdf": "Imprimir / guardar como PDF",
+    "share": "Enviar a un tercero",
+    "sharedNote": "Nota del prototipo: en el producto real, esto envía un enlace seguro al trabajador de su condado o a su ayudante por correo o mensaje de texto.",
+    "reportHeader": "Reporte de actividades de {name}",
+    "generated": "Generado el {date}",
+    "monthMeets": "Parece cumplir el requisito",
+    "monthBelow": "Por debajo de la cantidad mensual hasta ahora",
+    "monthTotals": "Totales del mes",
+    "combinedEquiv": "{n} horas equivalentes combinadas",
+    "weekLabel": "semana"
+  },
+  "resources": {
+    "title": "Obtenga ayuda en el condado de {county}",
+    "sub": "Recursos gratuitos para ayudarle a encontrar trabajo, hacer voluntariado, capacitarse o volver a la escuela. Todos pueden contar para sus horas mensuales.",
+    "localHeader": "En el condado de {county}",
+    "statewideHeader": "En cualquier parte de California",
+    "noLocal": "Estamos agregando recursos locales para su condado. Abajo hay recursos estatales, y la oficina de su condado puede conectarle con programas locales.",
+    "caljobs": "La bolsa de trabajo gratuita de California. Busque empleos locales, suba su currículum y conéctese con empleadores.",
+    "ajcc": "Ayuda gratuita en persona con búsqueda de empleo, currículums y capacitación. Encuentre su centro local.",
+    "volunteermatch": "Encuentre oportunidades de voluntariado con organizaciones sin fines de lucro cerca de usted.",
+    "cavolunteers": "Programas de servicio estatal y oportunidades de voluntariado en toda California.",
+    "ccc": "Encuentre su colegio comunitario local. Las clases pueden ser gratis para miembros de beneficios, e inscribirse al menos medio tiempo generalmente cumple el requisito de Medi-Cal por sí solo.",
+    "adultEd": "Obtenga su diploma de preparatoria o GED, aprenda inglés o desarrolle habilidades laborales. Gratis o de muy bajo costo.",
+    "cfet": "Capacitación laboral, experiencia de trabajo y servicios de apoyo gratuitos para miembros de CalFresh. Las horas cuentan para su requisito.",
+    "jobcorps": "Capacitación laboral residencial gratuita para edades de 16 a 24 años.",
+    "countyWdb": "Capacitación laboral, colocación y servicios de carrera locales.",
+    "countySocial": "La oficina de beneficios de su condado: preguntas sobre su caso, workfare e inscripción en programas."
+  },
+  "profile": {
+    "title": "Mi perfil",
+    "saved": "Perfil guardado.",
+    "sub": "Estos detalles son opcionales, pero hacen que sus reportes sean más útiles para el trabajador de su condado.",
+    "mediCalId": "ID de Medi-Cal (opcional)",
+    "calFreshCase": "Número de caso de CalFresh (opcional)",
+    "dob": "Fecha de nacimiento (opcional)",
+    "address": "Dirección (opcional)",
+    "save": "Guardar perfil",
+    "helpersTitle": "Personas que pueden ayudarme",
+    "helpersSub": "Dé acceso a su expediente a un administrador de casos, navegador o defensor. El acceso completo les permite registrar actividades por usted. Solo lectura les permite ver. Puede revocar el acceso en cualquier momento.",
+    "levels": { "read": "Solo lectura", "full": "Acceso completo" },
+    "revoke": "Revocar",
+    "invite": "Invitar",
+    "accessLevel": "Nivel de acceso",
+    "resetTitle": "Reiniciar demostración",
+    "resetSub": "Borra todos los datos del prototipo en este dispositivo: cuenta, actividades, validaciones y plan.",
+    "resetConfirm": "Esto borrará todos los datos de demostración en este dispositivo. ¿Continuar?",
+    "resetCta": "Borrar todos los datos de demostración"
+  }
+}

@@ -1,0 +1,504 @@
+{
+  "common": {
+    "estimateOnly": "This tool gives you an estimate only. Your county worker makes the final decision about your benefits.",
+    "officialNotice": "Remember: you will receive an official notice from the State of California about your benefits. This tool does not replace that notice. If you have questions, contact your county worker.",
+    "disclaimer": "This is not an official tool endorsed or supported by the State of California in any way. It is provided for informational purposes only."
+  },
+  "header": {
+    "stripe": "Informational tool for California benefits",
+    "prototypeTag": "PROTOTYPE",
+    "langToggle": "Language",
+    "myPathway": "My Pathway",
+    "signOut": "Sign out",
+    "signIn": "Log in"
+  },
+  "footer": {
+    "disclaimer": "This is not an official tool endorsed or supported by the State of California in any way. It is provided for informational purposes only. It gives estimates to help you plan. Your county makes all official decisions about your benefits, and you will receive official notices from the State of California.",
+    "cdssLink": "CalFresh work rules (CDSS)",
+    "dhcsLink": "Medi-Cal changes 2026-2028 (DHCS)",
+    "builtBy": "MyBenefitsPathway prototype. Built by The Health CoLab."
+  },
+  "landing": {
+    "title": "Keep your benefits on track",
+    "subtitle": "New federal rules may ask you to work, volunteer, go to school, or do other activities to keep your CalFresh or Medi-Cal benefits. This free tool helps you understand what may be expected, track your hours and income, and show what you have done.",
+    "entry1Title": "Do these rules apply to me?",
+    "entry1Desc": "Answer a few simple questions. We will help you estimate whether the new requirements may apply to your benefits, and how close you are to meeting them. Takes about 5 minutes.",
+    "entry2Title": "Log in to my dashboard",
+    "entry2Desc": "Already have an account? Enter your email or phone number and we will send you a secure link. No password needed.",
+    "entry3Title": "Create an account and start tracking",
+    "entry3Desc": "Already know these rules apply to you? Create an account and start tracking your hours and income right away.",
+    "datesTitle": "Key dates:",
+    "datesBody": "CalFresh work and community engagement rules began June 1, 2026. Some counties have waivers through October 31, 2026. Medi-Cal rules start January 1, 2027. Your county will send you a letter if this applies to you.",
+    "letterTitle": "Did you get a letter from your county?",
+    "letterBody": "Do not panic. A letter does not mean you are losing your benefits. It usually means the county needs information from you, or wants you to know about the new rules. Read the letter carefully, note any deadline, and use the official resources below. You can also use this tool to track the activities the letter asks about.",
+    "linkCdss": "CalFresh Work and Community Engagement Requirements (CDSS)",
+    "linkDhcs": "Medi-Cal Program Changes 2026-2028 (DHCS)",
+    "linkBenefitsCal": "BenefitsCal.com, the official site to apply for and manage your benefits"
+  },
+  "flow": {
+    "progress": "Question {current} of {total}",
+    "next": "Next",
+    "back": "Back",
+    "sections": {
+      "welcome": "Welcome",
+      "before": "Before we start",
+      "benefits": "Your benefits",
+      "work": "Work",
+      "school": "School or training",
+      "volunteer": "Volunteering",
+      "zip": "Your zip code",
+      "workfare": "Workfare"
+    },
+    "units": {
+      "hoursPerWeek": "hours per week",
+      "dollarsPerHour": "dollars per hour",
+      "dollarsTotal": "dollars total",
+      "creditHours": "credit hours this term",
+      "dollarsPerMonth": "dollars per month"
+    },
+    "userType": {
+      "q": "Who is filling out this tool today?",
+      "hint": "This helps us show the right language and tips as you go.",
+      "intro": "CalFresh work and community engagement rules began June 1, 2026 under the new federal law (H.R.1). Some counties have waivers through October 31, 2026, and we check this automatically from your zip code. Medi-Cal rules start January 1, 2027. This tool helps you estimate whether you are already meeting the requirements, or how close you are. It takes about 5 minutes. It gives you an estimate only: your county worker makes the final decision, and you will get official notices from the State of California.",
+      "opts": {
+        "participant": "I get benefits and I want to check my own situation",
+        "professional": "I am a caseworker, counselor, or other professional helping someone else"
+      }
+    },
+    "gotNotice": {
+      "q": "Has your county sent you a letter or notice saying you need to meet community engagement requirements?",
+      "hint": "These rules do not apply to everyone. If you have not gotten a notice yet, you can still use this tool to plan ahead.",
+      "intro": "Why we ask: the community engagement requirement does not apply to everyone. Many people do not have to meet it, for example if they are pregnant, have a disability, care for a young child, or were recently released from jail or prison. Your county will send you a letter if you need to meet these rules. Only the county decides who the rules apply to.",
+      "opts": {
+        "yes": "Yes, I got a notice saying I need to meet these requirements",
+        "no": "No, I have not gotten a notice",
+        "notsure": "I am not sure"
+      }
+    },
+    "program": {
+      "q": "Which benefits do you want to keep?",
+      "hint": "To keep your benefits, you may need to do certain activities each month. Pick the ones that apply to you.",
+      "intro": "Why we ask: the rules are different for CalFresh and Medi-Cal. Knowing which benefits you have helps us ask the right questions and add up your hours correctly.",
+      "opts": {
+        "calfresh": "CalFresh (food benefits)",
+        "medical": "Medi-Cal (health coverage)",
+        "both": "Both CalFresh and Medi-Cal"
+      }
+    },
+    "hasJob": {
+      "q": "Do you have a job right now?",
+      "hint": "This includes a paid job, running your own business, or seasonal work.",
+      "intro": "Why we ask: working counts toward your requirement. For CalFresh, earning at least $217.50 a week or working about 20 hours a week generally meets the rule. For Medi-Cal, earning at least $580 a month generally meets it. Any hours you work also count toward your monthly total.",
+      "opts": {
+        "yes": "Yes, I have a job",
+        "no": "No, I do not have a job",
+        "notsure": "I am not sure"
+      }
+    },
+    "workHrs": {
+      "q": "How many hours a week do you work?",
+      "hint": "Type your best guess. If your hours change from week to week, use the average."
+    },
+    "hourlyPay": {
+      "q": "How much do you get paid per hour?",
+      "hint": "Type your hourly pay. If you earn a set amount each month instead, divide that amount by the hours you worked."
+    },
+    "isSeasonal": {
+      "q": "Is your work seasonal?",
+      "hint": "Seasonal means you work mainly during certain times of the year, like farm work during harvest or retail work during the holidays.",
+      "intro": "Why we ask: if your work is seasonal, Medi-Cal can look at your average income over the last 6 months instead of just this month. That can help you meet the requirement even in months when you earn less.",
+      "opts": {
+        "yes": "Yes, my work is seasonal",
+        "no": "No, I work year-round"
+      }
+    },
+    "seasonal6moTotal": {
+      "q": "About how much did you earn in total over the last 6 months?",
+      "hint": "Add up your pay from the last 6 months. Your best guess is fine. We will use the monthly average."
+    },
+    "inSchool": {
+      "q": "Are you in school or a job training program right now?",
+      "hint": "This includes college, job training, vocational training, adult education, high school, and GED programs.",
+      "intro": "Why we ask: school and job training count toward your requirement. If you are enrolled at least half-time, that alone generally meets the Medi-Cal requirement for the month.",
+      "opts": {
+        "yes": "Yes, I am in school or a training program",
+        "no": "No, I am not"
+      }
+    },
+    "schoolEnrollment": {
+      "q": "How are you enrolled?",
+      "hint": "Your school decides whether you count as half-time. If you are not sure, check with your school office or pick the last option.",
+      "opts": {
+        "half_time_plus": "Half-time or more (my school says I am at least a half-time student)",
+        "less_credit": "Less than half-time, in classes with credit hours (like community college)",
+        "less_noncredit": "Less than half-time, in a program without credit hours (like job training or adult school)",
+        "notsure": "I am not sure"
+      }
+    },
+    "schoolCredits": {
+      "q": "How many credit hours are you taking this term?",
+      "hint": "Look at your class schedule. Each credit hour counts as about 13 hours per month toward your requirement."
+    },
+    "schoolHrs": {
+      "q": "How many hours a week do you spend in school or training?",
+      "hint": "Count time in class and doing required program activities."
+    },
+    "volunteers": {
+      "q": "Do you volunteer anywhere right now?",
+      "hint": "Unpaid work for a community organization can count toward your requirement.",
+      "intro": "Why we ask: volunteering with a nonprofit, government agency, or faith-based group counts toward your monthly hours. The organization needs to be able to confirm your hours.",
+      "opts": {
+        "yes": "Yes, I volunteer",
+        "no": "No, I do not volunteer"
+      }
+    },
+    "volQualifies": {
+      "q": "Is the place where you volunteer a nonprofit, a government agency, or a faith-based group?",
+      "hint": "Volunteering generally counts when it is with one of these kinds of organizations and they keep track of your hours.",
+      "opts": {
+        "yes": "Yes, it is a nonprofit, government, or faith-based group",
+        "no": "No, it is something else",
+        "notsure": "I am not sure"
+      }
+    },
+    "volHrs": {
+      "q": "How many hours a week do you volunteer?",
+      "hint": "Type your best guess. If it changes week to week, use the average."
+    },
+    "zipCode": {
+      "q": "What is your zip code?",
+      "hint": "Type the 5-digit zip code where you live.",
+      "intro": "Why we ask: some counties have CalFresh waivers right now, which means the work rules may not apply there yet. Some cities also have a higher minimum wage, which matters if you are in workfare. Your zip code helps us check both, and helps us show resources near you."
+    },
+    "workfare": {
+      "q": "Are you in a workfare program in your county?",
+      "hint": "Workfare means doing unpaid work assigned by the county in exchange for your CalFresh benefits. Most people are not in workfare. If you have never heard of it, pick No.",
+      "intro": "Why we ask: if you are in workfare, your required hours are different. They are based on your monthly benefit amount divided by minimum wage.",
+      "opts": {
+        "yes": "Yes, I am in a workfare program",
+        "no": "No",
+        "notsure": "I am not sure"
+      }
+    },
+    "workfareBenefit": {
+      "q": "How much are your monthly CalFresh food benefits?",
+      "hint": "Look at your EBT deposit or your county notice for the monthly amount."
+    }
+  },
+  "results": {
+    "metTitle": "It looks like you are on track",
+    "metSub": "Based on what you told us, it appears you have enough qualifying activity this month. Keep records of your hours and pay, and take this summary to your county worker to make sure everything is recorded correctly.",
+    "gapTitle": "It looks like you may need more hours this month",
+    "gapSub": "Based on what you told us, it appears you are not at the monthly amount yet. See below for how many more hours you may need and ways to get them. Remember, this is an estimate only.",
+    "waived": "Good news: it appears {county} County has a CalFresh waiver through October 31, 2026. You likely do not need to meet CalFresh work rules there until at least November 1, 2026. Check with your county worker for the most current information.",
+    "waivedSource": "Source: CDSS",
+    "breakdownTitle": "Your estimated hours this month",
+    "rows": {
+      "work": "Work",
+      "volunteering": "Volunteering",
+      "school": "School or training",
+      "eduHalfTime": "School (half-time or more)",
+      "pay": "Estimated pay"
+    },
+    "eduMeets": "Meets the Medi-Cal requirement on its own",
+    "hrs": "{n} hrs",
+    "week": "week",
+    "month": "month",
+    "calfreshTitle": "CalFresh (food benefits)",
+    "cfStandard": "The general rule: about {hours} hours of qualifying activity a month, or earning at least {pay} a week.",
+    "cfWorkfare": "Your workfare estimate: about {required} required hours, based on your benefit amount divided by the {locality} minimum wage of {wage} per hour.",
+    "cfMet": "It appears you are meeting the CalFresh requirement.",
+    "cfGap": "It appears you may need about {n} more hours this month for CalFresh.",
+    "medicalTitle": "Medi-Cal (health coverage)",
+    "mcStandard": "The general rule: {hours} hours of qualifying activity a month, or income of at least {income} a month. Hours and income can be combined.",
+    "mcPathways": {
+      "education_half_time": "It appears being enrolled in school at least half-time meets the Medi-Cal requirement for you.",
+      "income": "It appears your monthly income meets the Medi-Cal requirement on its own.",
+      "seasonal_average": "It appears your 6-month average income as a seasonal worker meets the Medi-Cal requirement.",
+      "combination": "It appears your combined hours and income meet the Medi-Cal requirement."
+    },
+    "mcGap": "It appears you may need about {n} more hours, or about {income} more in monthly income, for Medi-Cal.",
+    "whatCountsTitle": "What counts toward your hours?",
+    "whatCountsBody": "Work (including self-employment and in-kind work), volunteering with a nonprofit, government, or faith-based group, job training and work programs, and school all count. You can mix and match: for example, some work hours plus some volunteer hours. For Medi-Cal, your income can also count instead of hours. Create an account to track everything in one place and get a plan that fits your life.",
+    "ctaCreate": "Create an account and start tracking",
+    "print": "Print this page"
+  },
+  "auth": {
+    "errEmpty": "Please enter your email or phone number.",
+    "errRequired": "Please fill in your name, contact, county, and at least one program.",
+    "signInTitle": "Log in to My Pathway",
+    "signInSub": "No passwords here. We send a secure link to your email or phone, and you tap it to log in.",
+    "contactLabel": "Email or phone number",
+    "contactHint": "Enter the email address or mobile phone number you used for your account.",
+    "contactPlaceholder": "you@example.com or (555) 555-5555",
+    "sendLink": "Send me a secure link",
+    "orSocial": "Or log in with:",
+    "signInWith": "Continue with {provider}",
+    "checkTitle": "Check your messages",
+    "checkBody": "We sent a secure login link to {contact}. Open it on this device to continue. The link works for 15 minutes.",
+    "yourInbox": "your inbox",
+    "demoNote": "Prototype note: in the real product, this link arrives by email or text. For this demo, use the button below to simulate tapping the link.",
+    "demoOpenLink": "Simulate opening the link",
+    "createTitle": "Create your account",
+    "createSub": "Just the basics to get started. You can add more details later. No password needed, ever.",
+    "flowCarryover": "We saved your answers from the questions you just completed. They will carry over to your new account.",
+    "nameLabel": "Your name",
+    "countyLabel": "Your county",
+    "countySelect": "Choose your county...",
+    "zipLabel": "Zip code",
+    "programsLabel": "Which benefits do you have?",
+    "programs": {
+      "calfresh": "CalFresh (food benefits)",
+      "medical": "Medi-Cal (health coverage)",
+      "both": "CalFresh and Medi-Cal"
+    },
+    "createCta": "Create my account",
+    "noPassword": "We will send a secure link to confirm your email or phone. That is how you will log in every time: no passwords to remember."
+  },
+  "dash": {
+    "title": "Welcome, {name}",
+    "countySuffix": "County",
+    "tabs": {
+      "overview": "My Pathway",
+      "log": "Log activity",
+      "validations": "Validation",
+      "plan": "My plan",
+      "classes": "Take a class",
+      "career": "Build your career",
+      "reports": "Reports",
+      "resources": "Get help",
+      "profile": "Profile"
+    },
+    "monthlyPrompt": "It is a new month. Has anything changed with your job, school, or income? A quick check keeps your plan accurate.",
+    "monthlyPromptCta": "Update my plan",
+    "dismiss": "Not now",
+    "profilePrompt": "Finish setting up your profile. Adding details will help you and anyone you choose to help assist you.",
+    "profilePromptCta": "Complete profile",
+    "progressTitle": "Your progress for {month}",
+    "requirement": "Goal: {n} hours or equivalent",
+    "statusMet": "You have reported {hours} hours and {income} in income this month. Together, it appears these meet your requirement. Nice work!",
+    "statusGap": "You have reported {hours} hours and {income} in income this month. It appears you need about {gapHours} more hours, or about {gapIncome} more in reported income, to meet your requirement this month.",
+    "statusGapHint": "Hours and income work together. Any mix that adds up will do. Check the My plan tab for ideas that fit your life.",
+    "hoursReported": "Hours reported",
+    "incomeReported": "Income reported",
+    "seasonalTitle": "Seasonal worker: 6-month average",
+    "seasonalBody": "Your reported income over the last 6 months averages {avg} per month.",
+    "seasonalMet": "It appears this average meets the Medi-Cal income requirement, even in months when you earn less.",
+    "seasonalNotMet": "This average is below the monthly income amount, so keep tracking hours too.",
+    "recentTitle": "This month's entries",
+    "noEntries": "Nothing logged yet. Add your first activity to start building your record."
+  },
+  "log": {
+    "title": "Log an activity",
+    "type": "Activity type",
+    "types": {
+      "work": "Work (a job or self-employment)",
+      "community_service": "Volunteering / community service",
+      "education": "School or education",
+      "work_program": "Job training / work program"
+    },
+    "mode": "How do you want to report it?",
+    "modeHint": "You can report time (hours) or pay (wages). Pick whichever is easier to show with your records.",
+    "modes": {
+      "hours": "Hours",
+      "wages": "Pay / wages"
+    },
+    "date": "Date",
+    "hours": "Hours",
+    "amount": "Amount ($)",
+    "desc": "Description",
+    "descHint": "For example: \"Shift at Save Mart\" or \"Food bank volunteering\".",
+    "doc": "Supporting document (optional)",
+    "docHint": "A pay stub, timesheet, letter, or certificate. You can also add it later.",
+    "save": "Save this entry",
+    "saved": "Saved. It is on your My Pathway tracker now.",
+    "errInvalid": "Please enter a date and an amount greater than zero.",
+    "footnote": "Tip: log activities as you do them, a little at a time. Small entries add up, and your record stays ready if your county asks for it.",
+    "reported": "Reported"
+  },
+  "validation": {
+    "title": "Validation",
+    "sub": "Ask someone who knows your work, like a supervisor, volunteer coordinator, or teacher, to confirm an activity. Their confirmation makes your record stronger. They do not need an account.",
+    "status": "Status",
+    "statuses": {
+      "not_submitted": "Not submitted",
+      "pending": "Pending",
+      "validated": "Validated",
+      "declined": "Declined",
+      "expired": "Expired"
+    },
+    "pendingInfo": "Sent to {contact} {days} day(s) ago. The link works for 14 days.",
+    "reminder3": "A reminder was sent on day 3.",
+    "reminder7": "Another reminder was sent on day 7.",
+    "demoOpenValidator": "Demo: open the validator's view",
+    "validatedBy": "Confirmed by {name}, {title}, {org}.",
+    "declinedReason": "Declined: {reason}",
+    "contactPlaceholder": "Their email or phone number",
+    "send": "Send request",
+    "cancel": "Cancel",
+    "requestCta": "Request validation",
+    "lifecycleNote": "How it works: we send your validator a secure link. They see only this one activity, add their name and organization, and confirm or decline. Reminders go out on day 3 and day 7. Links expire after 14 days, and you can always send a new request."
+  },
+  "validator": {
+    "notFound": "This link is not valid or has expired.",
+    "errRequired": "Please enter your name and organization.",
+    "errReason": "Please add a short reason for declining.",
+    "thanksValidated": "Thank you for confirming",
+    "thanksDeclined": "Response recorded",
+    "recorded": "Your response has been saved to the member's record with your name and organization.",
+    "backToDemo": "Back to the demo dashboard",
+    "demoBanner": "Prototype note: this is what a validator sees after tapping the secure link they receive by email or text. No account is needed.",
+    "title": "Confirm an activity",
+    "sub": "{member} listed you as someone who can confirm the activity below. Please review it and confirm or decline. This takes about a minute.",
+    "name": "Your name",
+    "vtitle": "Your title or role",
+    "org": "Your organization",
+    "doc": "Add a document (optional)",
+    "reason": "Reason (only if declining)",
+    "reasonHint": "For example: \"Dates are not right\" or \"I do not supervise this person\".",
+    "attest": "I confirm this is accurate",
+    "decline": "Decline",
+    "signatureNote": "Confirming acts as your digital signature. Your name, role, organization, and the date will be recorded with this activity."
+  },
+  "plan": {
+    "title": "My personalized plan",
+    "sub": "Answer a few quick questions about your life, and we will suggest a realistic mix of activities to reach your monthly goal.",
+    "q": {
+      "transport": {
+        "label": "Do you have a reliable way to get around?",
+        "opts": { "yes": "Yes", "limited": "Sometimes", "no": "No" }
+      },
+      "caregiving": {
+        "label": "Do you take care of children or family members during the day?",
+        "opts": { "yes": "Yes", "no": "No" }
+      },
+      "schedule": {
+        "label": "What is your work situation?",
+        "opts": {
+          "full": "I work full-time",
+          "part": "I work part-time",
+          "varies": "My hours change a lot",
+          "none": "I am not working right now"
+        }
+      },
+      "digital": {
+        "label": "What do you use to get online?",
+        "opts": {
+          "smartphone": "Mostly my phone",
+          "computer": "A computer or tablet",
+          "limited": "I have limited internet access"
+        }
+      },
+      "interests": {
+        "label": "What are you interested in? Pick all that apply.",
+        "opts": {
+          "jobs": "Finding a job or more work",
+          "volunteering": "Volunteering",
+          "education": "School or classes",
+          "training": "Job training"
+        }
+      }
+    },
+    "generate": "Build my plan",
+    "summaryGap": "Here is a mix that could cover your remaining {gap} hours this month (or {income} more in reported income).",
+    "summaryMet": "It appears you are already on track this month. This plan can help you stay there.",
+    "hoursPerMonth": "~{n} hrs/month",
+    "redo": "Update my answers",
+    "recs": {
+      "findWork": {
+        "title": "Look for work through CalJOBS and your local job center",
+        "desc": "Paid work counts hour for hour, and your pay counts too. CalJOBS is free, and America's Job Centers can help with resumes and applications in person."
+      },
+      "onlineCourses": {
+        "title": "Take free online classes from home",
+        "desc": "Online courses count toward your hours and work around caregiving and transportation. Each completed class hour counts. Khan Academy and adult school online classes are free."
+      },
+      "localClasses": {
+        "title": "Enroll in classes at a community college or adult school",
+        "desc": "School hours count toward your requirement. If you enroll at least half-time, that alone generally meets the Medi-Cal requirement. Community college can be free for CalFresh and Medi-Cal members."
+      },
+      "training": {
+        "title": "Join a job training program",
+        "desc": "Free programs like CalFresh Employment & Training and WIOA count toward your hours and build skills for better pay. Ask your county or job center to enroll."
+      },
+      "volunteering": {
+        "title": "Volunteer with a nonprofit, government, or faith-based group",
+        "desc": "Volunteer hours count. Pick a place that can confirm your hours, like a food bank, school, or community center. VolunteerMatch lists openings near you."
+      },
+      "remoteVolunteering": {
+        "title": "Volunteer in flexible or from-home roles",
+        "desc": "Some organizations offer flexible or remote volunteering that fits around caregiving. Look for roles where the organization tracks and can confirm your hours."
+      },
+      "reportIncome": {
+        "title": "Report your pay every month",
+        "desc": "For Medi-Cal, income counts toward your requirement: $580 a month generally meets it on its own, and smaller amounts combine with your hours. Log your pay stubs in this app so nothing is missed."
+      }
+    }
+  },
+  "comingSoon": {
+    "tag": "Coming soon",
+    "meanwhile": "In the meantime, here are two good places to start:",
+    "classes": {
+      "title": "Take a class",
+      "body": "Free online classes and training that count toward your monthly hours, right from this dashboard. Course hours will log to your My Pathway tracker automatically, with no extra paperwork. We are building this now."
+    },
+    "career": {
+      "title": "Build your career",
+      "body": "Connect to real-world opportunities near you: community college programs, apprenticeships, certificates, and adult education. You will be able to build a career plan and have completed activities count toward your hours automatically. We are building this now."
+    }
+  },
+  "reports": {
+    "title": "Reports",
+    "sub": "Create a summary of your activities for any time period. Download it, print it, or share it with your county worker or someone helping you.",
+    "from": "From month",
+    "to": "To month",
+    "csv": "Download CSV",
+    "pdf": "Print / save as PDF",
+    "share": "Send to a third party",
+    "sharedNote": "Prototype note: in the real product, this sends a secure link to your county worker or helper by email or text.",
+    "reportHeader": "Activity report for {name}",
+    "generated": "Generated {date}",
+    "monthMeets": "Appears to meet requirement",
+    "monthBelow": "Below monthly amount so far",
+    "monthTotals": "Month totals",
+    "combinedEquiv": "{n} combined hour equivalent",
+    "weekLabel": "week"
+  },
+  "resources": {
+    "title": "Get help in {county} County",
+    "sub": "Free resources to help you find a job, volunteer, get training, or go back to school. All of these can count toward your monthly hours.",
+    "localHeader": "In {county} County",
+    "statewideHeader": "Anywhere in California",
+    "noLocal": "We are adding local resources for your county. Statewide resources are below, and your county office can connect you with local programs.",
+    "caljobs": "California's free job board. Search local jobs, upload your resume, and connect with employers.",
+    "ajcc": "Free in-person help with job searches, resumes, and training. Find your local center.",
+    "volunteermatch": "Find volunteer openings with nonprofits near you.",
+    "cavolunteers": "State service programs and volunteer opportunities across California.",
+    "ccc": "Find your local community college. Classes can be free for benefits members, and enrolling at least half-time generally meets the Medi-Cal requirement on its own.",
+    "adultEd": "Get your high school diploma or GED, learn English, or build job skills. Free or very low cost.",
+    "cfet": "Free job training, work experience, and support services for CalFresh members. Hours count toward your requirement.",
+    "jobcorps": "Free residential job training for ages 16-24.",
+    "countyWdb": "Local job training, placement, and career services.",
+    "countySocial": "Your county benefits office: case questions, workfare, and program enrollment."
+  },
+  "profile": {
+    "title": "My profile",
+    "saved": "Profile saved.",
+    "sub": "These details are optional, but they make your reports more useful to your county worker.",
+    "mediCalId": "Medi-Cal ID (optional)",
+    "calFreshCase": "CalFresh case number (optional)",
+    "dob": "Date of birth (optional)",
+    "address": "Address (optional)",
+    "save": "Save profile",
+    "helpersTitle": "People who can help me",
+    "helpersSub": "Give a case manager, navigator, or advocate access to your record. Full access lets them log activities for you. Read only lets them view. You can revoke access at any time.",
+    "levels": { "read": "Read only", "full": "Full access" },
+    "revoke": "Revoke",
+    "invite": "Invite",
+    "accessLevel": "Access level",
+    "resetTitle": "Demo reset",
+    "resetSub": "Clears all prototype data on this device: account, activities, validations, and plan.",
+    "resetConfirm": "This will erase all demo data on this device. Continue?",
+    "resetCta": "Reset all demo data"
+  }
+}
